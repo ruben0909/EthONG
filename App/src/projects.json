@@ -1,74 +1,74 @@
 [
   {
     "id": 0,
-    "name": "Ong 1",
-    "picture": "images/ong1.png",
-    "description": "Ong 1 description..."
+    "name": "UNICIEF",
+    "picture": "images/logo-unicef.svg",
+    "description": "¿Te gustaría hacer algo | extraordinario hoy?‎"
   },
   {
     "id": 1,
-    "name": "Ong 2",
-    "picture": "images/ong2.png",
-    "description": "Ong 2 description..."
+    "name": "Médicos Sin Fronteras",
+    "picture": "images/índice.jpg",
+    "description": "Médicos Sin Fronteras | Ayuda a Salvar Vidas‎"
   },
   {
     "id": 2,
-    "name": "Ong 3",
-    "picture": "images/ong3.png",
-    "description": "Ong 3 description..."
+    "name": "GreenPeace",
+    "picture": "images/greenpeace.jpg",
+    "description": "Protege el océano Antártico"
   },
   {
     "id": 3,
-    "name": "Ong 4",
-    "picture": "images/ong4.png",
-    "description": "Ong 4 description..."
+    "name": "WWF",
+    "picture": "images/wwf.png",
+    "description": "Somos la mayor organización independiente de conservación de la naturaleza"
   },
   {
     "id": 4,
-    "name": "Ong 5",
-    "picture": "images/ong5.png",
+    "name": "Cruz Roja",
+    "picture": "images/cruz_roja.png",
     "description": "Ong 5 description..."
   },
   {
     "id": 5,
-    "name": "Ong 6",
-    "picture": "images/ong6.png",
-    "description": "Ong 6 description..."
+    "name": "Acción contra el Hambre",
+    "picture": "images/accion.png",
+    "description": "Únete a nuestra acción."
   },
   {
     "id": 6,
-    "name": "Ong 7",
-    "picture": "images/ong7.png",
-    "description": "Ong 7 description..."
+    "name": "Save the children",
+    "picture": "images/save.jpg",
+    "description": "Hazte socia: Cambia su vida"
   },
   {
     "id": 7,
-    "name": "Ong 8",
-    "picture": "images/ong8.png",
-    "description": "Ong 8 description..."
+    "name": "Manos unidas",
+    "picture": "images/mano.jpg",
+    "description": "Campaña contra el Hambre"
   },
   {
     "id": 8,
-    "name": "Ong 9",
+    "name": "Manos Unidas",
     "picture": "images/ong9.png",
     "description": "Ong 9 description..."
   },
   {
     "id": 9,
-    "name": "Ong 10",
+    "name": "Cáritas",
     "picture": "images/ong10.png",
     "description": "Ong 10 description..."
   },
   {
     "id": 10,
-    "name": "Ong 11",
+    "name": "Acnur",
     "picture": "images/ong11.png",
     "description": "Ong 11 description..."
   },
   {
     "id": 11,
-    "name": "Ong 12",
+    "name": "Adena",
     "picture": "images/ong12.png",
     "description": "Ong 12 description..."
-  }    
+  }
 ]
