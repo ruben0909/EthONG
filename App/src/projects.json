@@ -1,8 +1,8 @@
 [
   {
     "id": 0,
-    "name": "UNICIEF",
-    "picture": "images/logo-unicef.svg",
+    "name": "UNICEF",
+    "picture": "images/logo-unicef.jpg",
     "description": "¿Te gustaría hacer algo | extraordinario hoy?‎"
   },
   {
@@ -21,7 +21,7 @@
     "id": 3,
     "name": "WWF",
     "picture": "images/wwf.png",
-    "description": "Somos la mayor organización independiente de conservación de la naturaleza"
+    "description": "Somos la mayor organización conservación de la naturaleza"
   },
   {
     "id": 4,
@@ -50,25 +50,25 @@
   {
     "id": 8,
     "name": "Manos Unidas",
-    "picture": "images/ong9.png",
+    "picture": "images/logomanosunidas.png",
     "description": "Ong 9 description..."
   },
   {
     "id": 9,
     "name": "Cáritas",
-    "picture": "images/ong10.png",
+    "picture": "images/caritas.png",
     "description": "Ong 10 description..."
   },
   {
     "id": 10,
     "name": "Acnur",
-    "picture": "images/ong11.png",
+    "picture": "images/acnur.png",
     "description": "Ong 11 description..."
   },
   {
     "id": 11,
-    "name": "Adena",
-    "picture": "images/ong12.png",
-    "description": "Ong 12 description..."
+    "name": "Educo",
+    "picture": "images/educo.png",
+    "description": "Cooperación y Educación para la infancia"
   }
 ]
