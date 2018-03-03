@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>EthONG</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-admin" display="none">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">EthONG Admin</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div id="admin" class="row">
+        <div class="col-lg-4">
+          <p>Lista de proyectos:</p>
+          <div>
+            <input type="radio" id="contactChoice1"
+             name="contact" value="email">
+            <label for="contactChoice1">Plan International en África</label>
+        
+            <input type="radio" id="contactChoice2"
+             name="contact" value="phone">
+            <label for="contactChoice2">Por una sonrisa en África</label>
+        
+            <input type="radio" id="contactChoice3"
+             name="contact" value="mail">
+            <label for="contactChoice3">ONG Fundación Save The Children</label>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          Cantidad: <input type="text" name="fname"><br>
+          Concepto: <input type="text" name="fname"><br>
+          <input type="submit" value="Enviar">
+        </div>
+        <div class="col-lg-4">
+          <p>Lista de proveedores:</p>
+          <div>
+            <input type="radio" id="contactChoice11"
+             name="contact" value="email">
+            <label for="contactChoice11">COCINA PARA ESCUELA INFANTIL EN KAMPALA</label>
+        
+            <input type="radio" id="contactChoice22"
+             name="contact" value="phone">
+            <label for="contactChoice22">VACA SIMEONA</label>
+        
+            <input type="radio" id="contactChoice33"
+             name="contact" value="mail">
+            <label for="contactChoice33">ESTUDIOS DE ENFERMERIA PARA EMILY KIPSANG JELAGAT</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

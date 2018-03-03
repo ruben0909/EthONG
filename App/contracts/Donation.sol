@@ -38,6 +38,7 @@ contract Donation {
     // Retrieving the adopters
    function getDonors() public view returns (Doner[]) {
        Doner[] result;
+
        for(var j=0; j<numProjects;j++){
            for(var i=0; i<projects[j].numDoners;i++){
                 result.push(Doner(projects[j].doners[i].addr, j));
