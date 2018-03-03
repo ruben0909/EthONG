@@ -2,73 +2,73 @@
   {
     "id": 0,
     "name": "UNICEF",
-    "picture": "images/logo-unicef.jpg",
+    "picture": "images/ong1.jpg",
     "description": "¿Te gustaría hacer algo | extraordinario hoy?‎"
   },
   {
     "id": 1,
     "name": "Médicos Sin Fronteras",
-    "picture": "images/índice.jpg",
+    "picture": "images/ong2.jpg",
     "description": "Médicos Sin Fronteras | Ayuda a Salvar Vidas‎"
   },
   {
     "id": 2,
     "name": "GreenPeace",
-    "picture": "images/greenpeace.jpg",
+    "picture": "images/ong3.jpg",
     "description": "Protege el océano Antártico"
   },
   {
     "id": 3,
     "name": "WWF",
-    "picture": "images/wwf.png",
+    "picture": "images/ong4.jpg",
     "description": "Somos la mayor organización conservación de la naturaleza"
   },
   {
     "id": 4,
     "name": "Cruz Roja",
-    "picture": "images/cruz_roja.png",
+    "picture": "images/ong5.jpg",
     "description": "Ong 5 description..."
   },
   {
     "id": 5,
     "name": "Acción contra el Hambre",
-    "picture": "images/accion.png",
+    "picture": "images/ong6.jpg",
     "description": "Únete a nuestra acción."
   },
   {
     "id": 6,
     "name": "Save the children",
-    "picture": "images/save.jpg",
+    "picture": "images/ong7.jpg",
     "description": "Hazte socia: Cambia su vida"
   },
   {
     "id": 7,
     "name": "Manos unidas",
-    "picture": "images/mano.jpg",
+    "picture": "images/ong8.jpg",
     "description": "Campaña contra el Hambre"
   },
   {
     "id": 8,
     "name": "Manos Unidas",
-    "picture": "images/logomanosunidas.png",
+    "picture": "images/ong9.jpg",
     "description": "Ong 9 description..."
   },
   {
     "id": 9,
     "name": "Cáritas",
-    "picture": "images/caritas.png",
+    "picture": "images/ong10.jpg",
     "description": "Ong 10 description..."
   },
   {
     "id": 10,
     "name": "Acnur",
-    "picture": "images/acnur.png",
+    "picture": "images/ong11.jpg",
     "description": "Ong 11 description..."
   },
   {
     "id": 11,
     "name": "Educo",
-    "picture": "images/educo.png",
+    "picture": "images/ong12.jpg",
     "description": "Cooperación y Educación para la infancia"
   }
 ]
