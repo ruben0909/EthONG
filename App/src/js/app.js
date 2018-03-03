@@ -4,7 +4,7 @@ App = {
 
   init: function() {
     // Load projects.
-    $.getJSON('../pets.json', function(data) {
+    $.getJSON('../projects.json', function(data) {
       var petsRow = $('#petsRow');
       var petTemplate = $('#petTemplate');
 
