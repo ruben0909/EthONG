@@ -3,7 +3,7 @@ App = {
   contracts: {},
 
   init: function() {
-    // Load pets.
+    // Load projects.
     $.getJSON('../pets.json', function(data) {
       var petsRow = $('#petsRow');
       var petTemplate = $('#petTemplate');
@@ -14,7 +14,7 @@ App = {
         petTemplate.find('.pet-breed').text(data[i].breed);
         petTemplate.find('.pet-age').text(data[i].age);
         petTemplate.find('.pet-location').text(data[i].location);
-        petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+        petTemplate.find('.btn-donate').attr('data-id', data[i].id);
 
         petsRow.append(petTemplate.html());
       }
@@ -39,16 +39,16 @@ App = {
 
   initContract: function() {
 
-    $.getJSON('Adoption.json', function(data) {
+    $.getJSON('Donation.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with truffle-contract
-      var AdoptionArtifact = data;
-      App.contracts.Adoption = TruffleContract(AdoptionArtifact);
+      var DonateArtifact = data;
+      App.contracts.Donation = TruffleContract(DonateArtifact);
     
       // Set the provider for our contract
-      App.contracts.Adoption.setProvider(App.web3Provider);
+      App.contracts.Donation.setProvider(App.web3Provider);
     
-      // Use our contract to retrieve and mark the adopted pets
-      return App.markAdopted();
+      // Use our contract to retrieve and mark the donated items
+      return App.markDonated();
     });
    
 
@@ -56,19 +56,19 @@ App = {
   },
 
   bindEvents: function() {
-    $(document).on('click', '.btn-adopt', App.handleAdopt);
+    $(document).on('click', '.btn-donate', App.handleDonate);
   },
 
-  markAdopted: function(adopters, account) {
-    var adoptionInstance;
+  markDonated: function(donors, account) {
+    var donationInstance;
 
-    App.contracts.Adoption.deployed().then(function(instance) {
-      adoptionInstance = instance;
+    App.contracts.Donation.deployed().then(function(instance) {
+      donationInstance = instance;
 
-      return adoptionInstance.getAdopters.call();
-    }).then(function(adopters) {
-      for (i = 0; i < adopters.length; i++) {
-        if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
+      return donationInstance.getDonors.call();
+    }).then(function(donors) {
+      for (i = 0; i < donors.length; i++) {
+        if (donors[i] !== '0x0000000000000000000000000000000000000000') {
           $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
         }
       }
@@ -77,12 +77,12 @@ App = {
     });
   },
 
-  handleAdopt: function(event) {
+  handleDonate: function(event) {
     event.preventDefault();
 
-    var petId = parseInt($(event.target).data('id'));
+    var projectId = parseInt($(event.target).data('id'));
 
-    var adoptionInstance;
+    var donationInstance;
 
     web3.eth.getAccounts(function(error, accounts) {
       if (error) {
@@ -91,13 +91,13 @@ App = {
 
       var account = accounts[0];
 
-      App.contracts.Adoption.deployed().then(function(instance) {
-        adoptionInstance = instance;
+      App.contracts.Donation.deployed().then(function(instance) {
+        donationInstance = instance;
 
-        // Execute adopt as a transaction by sending account
-        return adoptionInstance.adopt(petId, {from: account});
+        // Execute donate as a transaction by sending account
+        return donationInstance.donate(projectId, {from: account});
       }).then(function(result) {
-        return App.markAdopted();
+        return App.markDonated();
       }).catch(function(err) {
         console.log(err.message);
       });
