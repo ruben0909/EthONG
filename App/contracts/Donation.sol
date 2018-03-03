@@ -2,20 +2,29 @@ pragma solidity 0.4.19;
 
 //This is a contract!
 contract Donation {
-    address[16] public donors;
-
-    // Donate to project
+    
+    uint numDonations;
+    struct Donate {
+        address addr;
+        uint projectId;
+    }
+    
+    Donate[] donates;
+    //mapping (uint => Donate) donates;
+    
+    // Adopting A pet
     function donate(uint projectId) public returns (uint) {
-        require(projectId >= 0 && projectId <= 15);
+        require(projectId > 0);
+        numDonations = numDonations++;
 
-        donors[projectId] = msg.sender;
-
+        donates[numDonations] = Donate(msg.sender, projectId);
+        
         return projectId;
-        }
+    }
 
 
-        // Retrieving the donors
-        function getDonors() public view returns (address[16]) {
-            return donors;
-        }
+    // Retrieving the adopters
+    function getDonors() public view returns (Donate[]) {
+       return donates;
+    }
 }
